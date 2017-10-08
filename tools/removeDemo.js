@@ -15,7 +15,7 @@ const pathsToRemove = [
   './src/modules/*',
   './src/store/store.spec.js',
   './src/styles',
-  './src/index.js',
+  './src/index.jsx',
   './tools/removeDemo.js'
 ];
 
@@ -25,11 +25,11 @@ const filesToCreate = [
     content: '// Must have at least one test file in this directory or Mocha will throw an error.'
   },
   {
-    path: './src/index.js',
+    path: './src/index.jsx',
     content: '// Set up your application entry point here...'
   },
   {
-    path: './src/modules/index.js',
+    path: './src/modules/index.jsx',
     content: '// Set up your root reducer here...\n import { combineReducers } from \'redux\';\n export default combineReducers;'
   }
 ];

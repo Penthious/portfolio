@@ -31,14 +31,15 @@
   "author": "Cory House",
   "license": "MIT",
   "dependencies": {
-    "object-assign": "4.1.0",
+    "material-ui": "1.0.0-beta.13",
+    "object-assign": "4.1.1",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-redux": "5.0.5",
+    "react-redux": "5.0.6",
     "react-router-dom": "4.2.2",
     "react-router-redux": "5.0.0-alpha.6",
-    "redux": "3.6.0",
-    "redux-thunk": "2.1.0"
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "7.1.4",
