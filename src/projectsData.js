@@ -7,6 +7,7 @@ import sy from './assets/images/sweetyams.png';
 import llweb from './assets/images/legitlocalweb.png';
 import llapp from './assets/images/legitlocalapp.png';
 import venues from './assets/images/venues.png';
+import imbd from './assets/images/imbd.png';
 
 export default [
 	{
@@ -49,6 +50,18 @@ export default [
 		priority: 4,
 	},
 	{
+		name: 'IMBD Clone',
+		description: 'is a site that shows off the use of a IMBD api to pull in movies, actors, ' +
+		'and directors. The site shows off pagination, filtering and querying data. It is also' +
+		' built without the use of redux to show off a core understanding of react, react' +
+		' components and how to manage data between those components.',
+
+		image: imbd,
+		tech: 'React, ES6, foundation, flexbox, sass',
+		link: 'http://imbd.penthious.com/titles',
+		priority: 5,
+	},
+	{
 		name: 'penthious.com',
 		description: ' is my personal site that I built to display my skills. It is built with' +
 		' responsiveness in mind while using react and bulma for the UI. Redux to handle the' +
@@ -57,7 +70,7 @@ export default [
 		image: portfolio,
 		tech: 'React, ES6, material-ui, flexbox, sass, Redux, thunk',
 		link: 'https://github.com/Penthious/portfolio',
-		priority: 5,
+		priority: 6,
 	},
 	{
 		name: 'TandC',
@@ -67,7 +80,7 @@ export default [
 		image: tandc,
 		tech: ' Laravel, Bulma, Flexbox, jQuery, sass, Disqus',
 		link: 'https://github.com/cjsampson/tandc',
-		priority: 6,
+		priority: 7,
 	},
 	{
 		name: 'Blueline Screening Source',
@@ -77,7 +90,7 @@ export default [
 		image: bl,
 		tech: ' Laravel, Twitter Bootstrap, AJAX, Datatables, jQuery, NPM,' +
 		' Gulp, twillio',
-		priority: 7,
+		priority: 8,
 	},
 	{
 		name: 'Volunteer Verify',
@@ -86,7 +99,7 @@ export default [
 		' users know when and why the tests came back the way they did.',
 		image: vv,
 		tech: ' Laravel, Twitter Bootstrap, jQuery, Ajax, NPM, gulp, stripe API',
-		priority: 8,
+		priority: 9,
 	},
 	{
 		name: 'Paramount Tax',
@@ -95,7 +108,7 @@ export default [
 		' correct data to be passed to the front end so we could show the correct info.',
 		image: pt,
 		tech: ' Laravel, Twitter Bootstrap, jQuery, NPM, gulp, bower, stripe API, behat',
-		priority: 9,
+		priority: 10,
 	},
 	{
 		name: 'Sweet Yams',
@@ -106,6 +119,6 @@ export default [
 		image: sy,
 		tech: ' Laravel, Twitter Bootstrap, jQuery, custom sass, NPM, google API, stripe API',
 		link: 'https://github.com/thesweetyams/sweetyams',
-		priority: 10,
+		priority: 11,
 	},
 ];

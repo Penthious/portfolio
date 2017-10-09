@@ -19,10 +19,13 @@ const styles = {
 		height: 200,
 		marginLeft: 10,
 	},
+	links: {
+		textTransform: 'none',
+	},
 };
 
 const Project = (props) => {
-	const { classes: { container, card, media }, project } = props;
+	const { classes: { container, card, media, links }, project } = props;
 	return (
 		<Grid item xs={12} className={container}>
 			<Card className={card}>
@@ -55,7 +58,7 @@ const Project = (props) => {
 					<CardActions>
 						{project.link ?
 							<Button dense color="primary">
-								<a href={project.link} target="_blank">View Site</a>
+								<a href={project.link} target="_blank" className={links}>{project.link}</a>
 							</Button>
 							: null
 						}
