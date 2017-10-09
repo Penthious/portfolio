@@ -2,16 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from 'material-ui/Grid';
 import { withStyles } from 'material-ui/styles';
-import { primary } from '../styles/global';
+import { primary, secondary, white, black} from '../styles/global';
 import { Link } from 'react-router-dom';
 
 const styles = {
 	container: {
-		backgroundColor: primary,
+		backgroundColor: secondary,
 		boxShadow: '0px 1px 15px black'
 	},
 	h1: {
 		textDecoration: 'none',
+		color: black,
 	}
 };
 

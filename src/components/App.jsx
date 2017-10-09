@@ -19,7 +19,7 @@ const styles = {
 	},
 	switchContainer: {
 	}
-}
+};
 
 class App extends React.Component {
 	render() {

@@ -5,12 +5,15 @@ import Grid from 'material-ui/Grid';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import { lightGrey } from '../styles/global';
 const styles = {
 	container: {
 		marginBottom: 10,
 	},
 	card: {
 		maxWidth: 800,
+		backgroundColor: lightGrey,
+		borderRadius: 5,
 	},
 	media: {
 		height: 200,
@@ -19,7 +22,7 @@ const styles = {
 };
 
 const Project = (props) => {
-	const { classes: { container, card, media } } = props;
+	const { classes: { container, card, media }, project } = props;
 	return (
 		<Grid item xs={12} className={container}>
 			<Card className={card}>
@@ -27,8 +30,8 @@ const Project = (props) => {
 					<Grid item xs={6}>
 						<CardMedia
 							className={media}
-							image="http://lorempixel.com/400/200"
-							title="Contemplative Reptile"
+							image={project.image}
+							title={project.name}
 						/>
 					</Grid>
 					<Grid item xs={6}>
@@ -36,32 +39,26 @@ const Project = (props) => {
 							<Grid item>
 								<CardContent>
 									<Typography type="headline" component="h2">
-										Lizard
+										{project.name}
 									</Typography>
 									<Typography component="p">
-										Lizards are a widespread group of squamate reptiles, with
-										over 6,000
-										species, ranging
-										across all continents except Antarctica
+										{project.description}
 									</Typography>
 									<hr/>
 									<Typography component="i">
-										Lizards are a widespread group of squamate reptiles, with
-										over 6,000
-										species, ranging
-										across all continents except Antarctica
+										{project.tech}
 									</Typography>
 								</CardContent>
 							</Grid>
 						</Grid>
 					</Grid>
 					<CardActions>
-						<Button dense color="primary">
-							Share
-						</Button>
-						<Button dense color="primary">
-							Learn More
-						</Button>
+						{project.link ?
+							<Button dense color="primary">
+								<a href={project.link} target="_blank">View Site</a>
+							</Button>
+							: null
+						}
 					</CardActions>
 				</Grid>
 			</Card>

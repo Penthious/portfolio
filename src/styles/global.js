@@ -1,4 +1,7 @@
-import { deepPurple } from 'material-ui/colors';
+import { deepPurple, grey, lightBlue } from 'material-ui/colors';
 
-export const primary = deepPurple[300];
-export const secondary = deepPurple[100];
+export const primary = lightBlue[300];
+export const secondary = lightBlue[200];
+export const lightGrey = grey[200];
+export const white = grey[50];
+export const black = grey[900];
