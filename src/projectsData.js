@@ -1,4 +1,3 @@
-import portfolio from './assets/images/portfolio.png';
 import tandc from './assets/images/tandc.png';
 import bl from './assets/images/bl.png';
 import vv from './assets/images/vv.png';
@@ -9,6 +8,7 @@ import llapp from './assets/images/legitlocalapp.png';
 import venues from './assets/images/venues.png';
 import imbd from './assets/images/imbd.png';
 import challenger from './assets/images/challenger.png';
+import penthious from './assets/images/penthious.png';
 
 export default [
 	{
@@ -67,7 +67,7 @@ export default [
 		' responsiveness in mind while using react and bulma for the UI. Redux to handle the' +
 		' state and laravel to handle the backend layer.',
 
-		image: portfolio,
+		image: penthious,
 		tech: 'React, ES6, material-ui, flexbox, sass, Redux, thunk',
 		link: 'https://github.com/Penthious/portfolio',
 		priority: 6,
