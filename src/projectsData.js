@@ -44,7 +44,7 @@ export default [
 		description: 'is a site that was built for the Challenger school district to handle the ' +
 		'student registration, school events, student records and a full cms to change up any data ' +
 		'you see on the front end.',
-		image: challenge,
+		image: challenger,
 		tech: ' October CMS, Handlebars, mustache, Angular, ES6, foundation',
 		link: 'https://www.challengerschool.com',
 		priority: 4,
