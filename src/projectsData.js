@@ -8,6 +8,7 @@ import llweb from './assets/images/legitlocalweb.png';
 import llapp from './assets/images/legitlocalapp.png';
 import venues from './assets/images/venues.png';
 import imbd from './assets/images/imbd.png';
+import challenger from './assets/images/challenger.png';
 
 export default [
 	{
@@ -43,8 +44,7 @@ export default [
 		description: 'is a site that was built for the Challenger school district to handle the ' +
 		'student registration, school events, student records and a full cms to change up any data ' +
 		'you see on the front end.',
-
-		image: portfolio,
+		image: challenge,
 		tech: ' October CMS, Handlebars, mustache, Angular, ES6, foundation',
 		link: 'https://www.challengerschool.com',
 		priority: 4,
