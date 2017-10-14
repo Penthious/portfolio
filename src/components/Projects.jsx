@@ -11,16 +11,22 @@ const styles = {
 	},
 };
 
-const Projects = (props) => {
+const Projects = props => {
 	const { classes: { container } } = props;
-	console.log('========');
-	console.log('========');
-	console.log('Projects-18', projectsData);
-	console.log('========');
-	console.log('========');
 	return (
-		<Grid container justify="center" direction="column" align="center" className={container}>
-			{projectsData.map(project => <Project key={project.priority + project.name} project={project} />)}
+		<Grid
+			container
+			justify="center"
+			direction="column"
+			align="center"
+			className={container}
+		>
+			{projectsData.map(project => (
+				<Project
+					key={project.priority + project.name}
+					project={project}
+				/>
+			))}
 		</Grid>
 	);
 };

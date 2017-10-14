@@ -46,7 +46,7 @@ export default [
 		'you see on the front end.',
 		image: challenger,
 		tech: ' October CMS, Handlebars, mustache, Angular, ES6, foundation',
-		link: 'https://www.challengerschool.com',
+		link: 'https://dev2.challengerschool.com ',
 		priority: 4,
 	},
 	{

@@ -5,7 +5,7 @@ import NotFoundPage from './NotFoundPage';
 import Projects from './Projects';
 import Resume from './Resume';
 import Header from './Header';
-import { primary } from '../styles/global'
+import { primary } from '../styles/global';
 import { withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import Footer from './Footer';
@@ -18,7 +18,8 @@ const styles = {
 		backgroundColor: primary,
 	},
 	switchContainer: {
-	}
+		marginLeft: 100,
+	},
 };
 
 class App extends React.Component {
@@ -26,7 +27,9 @@ class App extends React.Component {
 		const { classes: { container, switchContainer } } = this.props;
 		return (
 			<Grid container direction="column" className={container}>
-				<Header />
+				<Grid item xs={12}>
+					<Header />
+				</Grid>
 				<Grid item className={switchContainer}>
 					<Switch>
 						<Route exact path="/" component={Projects} />
@@ -35,8 +38,9 @@ class App extends React.Component {
 					</Switch>
 				</Grid>
 
-				<Footer />
-
+				<Grid item xs={12}>
+					<Footer />
+				</Grid>
 			</Grid>
 		);
 	}

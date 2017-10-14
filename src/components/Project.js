@@ -24,7 +24,7 @@ const styles = {
 	},
 };
 
-const Project = (props) => {
+const Project = props => {
 	const { classes: { container, card, media, links }, project } = props;
 	return (
 		<Grid item xs={12} className={container}>
@@ -47,7 +47,7 @@ const Project = (props) => {
 									<Typography component="p">
 										{project.description}
 									</Typography>
-									<hr/>
+									<hr />
 									<Typography component="i">
 										{project.tech}
 									</Typography>
@@ -56,12 +56,17 @@ const Project = (props) => {
 						</Grid>
 					</Grid>
 					<CardActions>
-						{project.link ?
+						{project.link ? (
 							<Button dense color="primary">
-								<a href={project.link} target="_blank" className={links}>{project.link}</a>
+								<a
+									href={project.link}
+									target="_blank"
+									className={links}
+								>
+									{project.link}
+								</a>
 							</Button>
-							: null
-						}
+						) : null}
 					</CardActions>
 				</Grid>
 			</Card>

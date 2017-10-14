@@ -1,17 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from 'material-ui/Grid';
+import { withStyles } from 'material-ui/styles';
+const styles = {
+	container: {
+		marginLeft: 100,
+	},
+};
 
-const Footer = (props) => {
-	const styles = {
-		flexDirection: 'row',
-		alignSelf: 'flex-end',
-		justifyContent: 'space-between',
-		alignContent: 'center'
-	}
+const Footer = props => {
 	return (
-		<Grid container align="flex-end" justify="space-between">
-			<Grid item><h1>test</h1></Grid>
+		<Grid
+			container
+			align="flex-end"
+			justify="space-between"
+			styles={props.classes.container}
+		>
+			<Grid item xs={12}>
+				<p style={{marginLeft:90}}>Penthious.com</p>
+			</Grid>
 		</Grid>
 	);
 };
@@ -19,4 +26,4 @@ const Footer = (props) => {
 Footer.propTypes = {};
 Footer.defaultProps = {};
 
-export default Footer;
+export default withStyles(styles)(Footer);
